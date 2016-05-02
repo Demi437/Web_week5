@@ -46,52 +46,57 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.wrap{
-	width:1200px;
-	height:1150px;
+body{
 	background:url('../images/bg_html.jpg');
-	margin: 0 auto;
-	margin-bottom:20px;
+	background-repeat:repeat;
 }
 .headline{
 	position:absolute;
-	width:1200px;
+	width:1000px;
 	top:0;
+	margin-left:80px;
 }
 .red{
-	width:50px;
+	width:80px;
 	height:10px;
 	background-color:red; 
 	float:left;
 }
 .green{
-	width:50px;
+	width:80px;
 	height:10px;
 	background-color:green; 
 	float:left;
 }.blue{
-	width:50px;
+	width:80px;
 	height:10px;
 	background-color:blue; 
 	float:left;
 }
 .black{
-	width:1050px;
+	width:760px;
 	height:10px;
 	background-color:black;
 	float:left; 
 }
+.wrap{
+	width:1200px;
+	margin: 0 auto;
+}
 .header{
-	width:1000px;
 	float:left;
-	margin-left:100px; 
-	position: relative;
+	margin-top:20px;
+	margin-left:auto;
+	width:1000px;
 }
-.logo h1{
-	position: absolute;
-	top:30px;
-	left:50px;
+.logo{
+	width: 170px;
+	height:80px;
+	float:left;
+	margin-left: 100px;
+	margin-top:20px; 
 }
+
 .logo a{
 	width: 170px;
 	height:80px;
@@ -101,10 +106,10 @@ table {
 	margin-bottom:10px;
 }
 .menu{
-	width:500px;
+	width:600px;
 	margin-top:80px;
-	margin-right:100px;
 	float:right;
+	position: relative;
 }
 .menu li{
 	display:inline-block;
@@ -114,15 +119,18 @@ table {
 .menu a{
 	text-decoration:none;
 	font-size:20px;
-	color:black;  
+	color:black;
+	display: block;  
 }
 .menu a:hover{
 	color:#0066FF;
+	background-color: #DDDDDD;
 }
 .link{
-	position:absolute;
-	right:75px;
-	top:30px;
+	float: right;
+}
+.link li{
+	display: inline;
 }
 .link a{
 	padding-left:5px;
@@ -133,34 +141,45 @@ table {
 	top: 1px;
 	left: 1px;
 }
+
+.content{
+	float:left;
+	margin-top:20px;
+	margin-left:100px;
+	width:900px;
+}
 .slider{
 	float:left;
-	margin-top:30px;
-	margin-left:120px;
-}
-.content{
-	margin-bottom:10px;
+	width:550px;
 }
 .slider img{
-	width:550px;
+	float:left;
+	width:600px;
+}
+.slider a{
+	display: block;
+
+}
+.slider a:hover{
+	opacity: 0.6;
 }
 .box{
 	background-color:#444444;
-	float:left;
-	margin-top:30px;
-	width:300px;
-	height:306px;
-	padding-top:50px;
-	padding-left:50px;
+	float:right;
+	width:280px;
+	height:359.063px;
+	padding:20px 30px 10px 10px;
 	position:relative; 
 }
 .box h2{
 	color:#0066FF;
+	padding-left:20px;
 	font-size:30px; 
 }
 .box p{
-	line-height:1.5;
-	padding-top:10px; 
+	line-height:2;
+	padding-top:10px;
+	padding-left:20px; 
 	color:white;
 }
 .box a{
@@ -174,8 +193,8 @@ table {
 	color:white;
 	background-color:#666666;  
 	position:absolute;
-	bottom:30px;
-	left:50px;
+	bottom:20px;
+	left:30px;
 }
 .box a:hover{
 	background-color:#888888;
@@ -183,7 +202,7 @@ table {
 .content_info{
 	float:left;
 	margin-top:20px;
-	margin-left:120px;
+	margin-left:100px;
 	width:900px;
 	background-color:white;
 }
@@ -194,52 +213,66 @@ table {
 .content_info span{
 	color:#0066FF;	
 }
+.introduction{
+	float:left;
+	margin-top:20px;
+	margin-left:100px;
+	width:900px;
+}
 .events{
 	float:left;
 	margin-top:20px;
-	margin-left:120px;
 	width:600px;
 	background-color:white;
 	padding:20px 20px 20px 20px;
 }
 .events a{
 	float: left;
-	padding:15px 15px 5px 5px;
+	padding:20px 15px 5px 5px;
+	text-decoration: none;
+	color:black;
+	display:block;
 }
-.title{
+.events a:hover{
+	background-color:#DDDDDD;
+}
+h3{
 	font-size:30px;
-	padding-top:10px;
+	padding-left:15px;
 }
-.title span{
+span{
 	color:#0066FF;
 }
-
-.text{
-	float:left;
+.events_content{
+	float: right;
 	width:300px;
-	padding-left:20px;
-	padding-top:13px;
-	line-height:1.5;	
+	margin-left: 20px;
 }
-.name{
-	font-size:20px;
+.events_content p{
+	line-height:1.5;
 }
-.text p{
-	float:left;
+
+.title{
+	font-size:30px;
+	padding-top:20px;
 }
 .list{
 	float:left;
 	margin-top:20px;
 	width:260px;
-	height:406px;
+
 	background-color:white;
 }
 .list li a{
 	text-decoration:none;
+	line-height: 1.5;
 	color:black;
+	display:block;
+	height:25px;
 }
 .list li a:hover{
-	color:#0066FF;	
+	color:#0066FF;
+	background-color: #DDDDDD;	
 }
 .list ul{ 
 	list-style-type:none;
@@ -251,8 +284,11 @@ table {
 	padding-top:10px;
 	padding-left:12px;
 }
+.find_us{
+	float:left;
+}
 input{
-	margin-top: 25px;
+	margin-top: 20px;
 	margin-bottom:10px;
 	color:#AAAAAA;
 	padding:10px 10px 10px 10px;
@@ -267,17 +303,21 @@ input{
 	font-size:15px;
 	color:#0066FF;
 	background-color:#DDDDDD;
-	margin-top:20px;
+	margin-top:5px;
+	margin-bottom: 12px;
 }
 .search:hover{
 	background-color:#CCCCFF;
+}
+.clear{
+	clear: both;
 }
 .footer{
 	text-align:center;
 	float:left;
 	width:1000px;
 	margin-top:20px;
-	margin-left:120px;	
+	margin-bottom: 10px;	
 }
 .footer span{
 	color:#0066FF;
@@ -285,3 +325,168 @@ input{
 .footer p{
 	line-height:1.5;
 }
+@media only screen and (max-width: 1200px) {
+.wrap{
+	width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+.wrap{
+	width:100%;
+	margin:0 auto; 
+	overflow: hidden;
+}
+.headline{
+	display: none;
+}
+.header{
+	width:100%;
+}
+.header h1{
+	float: none;
+}
+.link {
+	display: none;
+}
+.menu{
+	padding:30px; 
+	float: none;
+	width:80%;
+	margin-left:10%; 
+}
+.menu li{
+	padding-left: 10px;
+	margin-left: 10%;
+}
+.menu li a{
+	display: block;
+}
+.menu li a:hover{
+	padding:10px;
+	background-color:#DDDDDD;
+}
+.slider{
+	width:100%;
+
+}
+.slider img{
+	width:82%;
+}
+.box{
+	display: none;
+}
+.content{
+	width:100%;
+}
+.content_info{
+	width:80%;
+	padding-right:15px;
+	float:none;
+}
+.introduction{
+	width: 100%;
+}
+.events{
+	width:76%;
+	padding-right:25px;
+	overflow: hidden;
+}
+.list{
+	width:82%;
+}
+.title{
+	padding-left: 20px;
+}
+.list ul{
+	padding-left:20px;
+	display: inline-block;
+}
+
+.find_us{
+	float: right;
+	margin:0px 10px 20px 0px;
+
+}
+.footer{
+	width:100%;
+	float: none;
+}
+
+
+}
+
+@media only screen and (max-width: 320px) {
+.wrap{
+	width:100%;
+	overflow: hidden;
+}
+.header{
+	margin: 0;
+}
+.logo{
+	margin: 0;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+
+.menu{
+	margin: 0;
+	width:100%;
+	margin-top: 30%;
+}
+.menu li{
+	float: none;
+	border-bottom: solid 2px;
+	font-size: 20px;
+	text-align: center;
+	margin-right: 0px;
+	margin-left: 5%;
+}
+.menu a:hover{
+	background-color: #DDDDDD;
+}
+
+.link{
+	display:none;
+}
+.slider{
+	width: 100%;
+	float: none;
+}
+.content{
+	margin:0;
+	margin-left:10%; 
+
+}
+.content_info{
+	width:78%;
+	margin:0;
+	margin-left:10%; 
+	margin-top:5%;
+}
+.introduction{
+	margin: 0;
+	margin-left:10%;
+	width:90%;
+}
+.events li{
+	margin-left:5%;
+}
+.events a:hover{
+	opacity:0.6;
+}
+.events_content{
+	display: none;
+}
+.list{
+	width:92%;
+}
+.find_us{
+	display: none;
+}
+
+
+}
+
